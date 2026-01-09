@@ -19,7 +19,6 @@ public class BookController {
         this.service = service;
     }
 
-    // /api/books?title=1984&genre=Drama&publishedYear=1949&page=0&size=10&sort=title,asc
     @GetMapping
     public Page<BookResponse> getAll(
             @RequestParam(required = false) String title,
